@@ -16,7 +16,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])):
 		$_SESSION['user_id'] = $results['id'];
 		header( 'Location: homepage.php' );
 	} else{
-		$message = 'Sorry, those credentials do not match';
+		$message = 'Wrong email ID or password. Try again? :-)';
 	}
 endif;
 ?>
@@ -43,7 +43,7 @@ endif;
 </head>
 <body>
 	<div class="header">
-	<h1>Exam Mate</h1>
+	<h1 style="font-weight: bold;">EXAM MATE</h1>
 	
 	</div>
 
@@ -52,14 +52,14 @@ endif;
 	<?php endif; ?>
 
 	<div style="padding: 170px 0">
-	<h1>Login</h1> 
-	<span>or <a style="text-decoration: none;" href="register.php">Register here</a></span>
+	<h1>Login & begin studying now.</h1> 
+	<span>Or <a style="text-decoration: none;" href="register.php">register here if you're new.</a></span>
 	<form action="login.php" method="POST">
 
 		<input type="text" placeholder="What's your email ID?" name="email">
 		<input type="password" name="password" placeholder="And password for the same?">	
 
-		<input type="submit">	
+		<input type="submit" value="LOGIN">	
 	</form>
 	</div>
  
