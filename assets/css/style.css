@@ -1,7 +1,7 @@
 body{
 	margin: 0px;
 	padding: 0px;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Comfortaa', sans-serif;
 	text-align: center;
 }
 input[type="text"], input[type="password"]{
@@ -48,4 +48,3 @@ input[type="submit"]:hover{
 	color: #333;
 	text-decoration: none;
 }
-

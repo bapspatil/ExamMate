@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Homepage</title>
+  <title>Exam Mate</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,112 +10,115 @@
   <script type="text/javascript">
     
   </script>
+  <style>
+  
+    .navbar-no-margin {
+      margin-bottom: 0px;
+      border-radius: 0px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 32px;
+    padding: 24px;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+  </style>
+
 </head>
 <body>
-
-<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDBNNk-WmrLZ_Bzk3T-hh6rRzPhI9Gx8yM",
-    authDomain: "exam-partner-f1ae4.firebaseapp.com",
-    databaseURL: "https://exam-partner-f1ae4.firebaseio.com",
-    projectId: "exam-partner-f1ae4",
-    storageBucket: "exam-partner-f1ae4.appspot.com",
-    messagingSenderId: "1074270033002"
-  };
-  firebase.initializeApp(config);
-</script>
-
-<!--<div href = "logout.php" style="float:right">
-<form align="right" name="Logout" method="post" action="logout.php">
-  <label class="logoutLblPos">
-  <input name="logout" type="submit" id="submit2" value="Logout">
-  </label>
-</form>
-</div>-->
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+<nav class="navbar navbar-inverse navbar-no-margin">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#">Exam Partner</a>
+      <a class="navbar-brand" href="./homepage.php"><b>Exam Mate</b></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="./homepage.php">Home</a></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
+          <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
+            <li><a href="assets/branch/cse.php">CSE</a></li>
+            <li><a href="assets/branch/it.php">ISE</a></li>
+            <li><a href="assets/branch/me.php">ME</a></li>
+            <li><a href="assets/branch/ce.php">CE</a></li>
+            <li><a href="assets/branch/ee.php">EEE</a></li>
+            <li><a href="assets/branch/ec.php">ECE</a></li>
           </ul>
-        </li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
+      </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="./register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="./logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        <li><a href="./register.php"><span class="glyphicon glyphicon-user"></span> <b>CREATE ACCOUNT</b></a></li>
+        <li><a href="./logout.php"><span class="glyphicon glyphicon-log-in"></span> <b>LOGOUT</b></a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="jumbotron text-center" style="background-image: walle.jpg;">
-  <h1>Welcome to Exam Partner</h1>
- <!--<p>Resize this responsive page to see the effect!</p> -->
+<div class="jumbotron text-center" style="background-image: url('./img/home_bg.png'); height: 100vh;">
+<div class="container" style="color: white; padding-top: 220px;">
+  <h1>Welcome to Exam Mate!</h1>
+  <p>An app by Bapusaheb Patil.</p>
+  <h4> Begin studing now. Scroll down to find your department.</h4>
+  </div>
+  <h2 style="color: white; margin-top: 200px;">↓</h2>
+  </div>
 </div>
-  
+
 <div class="container">
   <div class="row">
-    <div class="col-sm-4">
-      <h3 >Computer Science</h3>
-      <p>It provides you Question Papers of University exam..</p>
-      <p>Also you will get Coding examples of various Languages..</p>
-      <a style="text-decoration: none;" href="assets/branch/cse.php"> Click here..</a>
+    <div class="col-sm-3 card">
+    <a style="text-decoration: none; color: black;" href="assets/branch/cse.php">
+      <h3 >CSE Department</h3>
+      <p>Question papers, syllabus and coding examples from the Department of Computer Science & Engineering.</p>
+      <p> CLICK HERE</p>
+      </a>
     </div>
-    <div class="col-sm-4">
-      <h3>Information & Technology</h3>
-      <p>It provides you Question Papers of University exam..</p>
-      <p>Also you will get Coding examples of various Languages..</p>
-      <a style="text-decoration: none;" href="assets/branch/it.php"> Click here..</a>
+    <div class="col-sm-3 card">
+    <a style="text-decoration: none; color: black;" href="assets/branch/it.php">
+      <h3>ISE Department</h3>
+      <p>Question papers, syllabus and coding examples from the Department of Information Science & Engineering.</p>
+      <p> CLICK HERE</p>
+    </a>
     </div>
-    <div class="col-sm-4">
-      <h3>Mechanical</h3>        
-      <p>We provide you helpful study material..</p></br>
-      <p>Learn more about the design, construction, and use of machines.</p>
-      <a style="text-decoration: none;" href="assets/branch/me.php"> Click here..</a>
+    <div class="col-sm-3 card">
+    <a style="text-decoration: none; color: black;" href="assets/branch/me.php">
+      <h3>ME Department</h3>        
+      <p>Question papers, syllabus and coding examples from the Department of Mechanical Engineering.</p>
+      <p> CLICK HERE</p>
+    </a>
     </div>
-    <div class="col-sm-4">
-      <h3>Civil Engineering</h3>        
-      <p>The best platform where you can find out more about this field</p>
-      <p>We provide you material of autocad etc.</p>
-      <a style="text-decoration: none;" href="assets/branch/ce.php"> Click here..</a>
+    <div class="col-sm-3 card">
+      <a style="text-decoration: none; color: black;" href="assets/branch/ce.php">
+      <h3>CE Department</h3>        
+      <p>Question papers, syllabus and coding examples from the Department of Civil Engineering.</p>
+      <p> CLICK HERE</p>
     </div>
-    <div class="col-sm-4">
-      <h3>Electrical & Electronics</h3>        
-      <p>We provide you Advance Electrical Design and Simulation Tools.</p>
-      <p>Details about High End Experimental Platforms and Equipment.</p>
-      <a style="text-decoration: none;" href="assets/branch/ee.php"> Click here..</a>
+    <div class="col-sm-3 card">
+      <a style="text-decoration: none; color: black;" href="assets/branch/ee.php">
+      <h3>EEE Department</h3>        
+      <p>Question papers, syllabus and coding examples from the Department of Electrical & Electronics Engineering.</p>
+      <p> CLICK HERE</p>
     </div>
-    <div class="col-sm-4">
-      <h3>Electronics & Communication</h3>        
-      <p>The powerful CAD tools for VLSI, RF Design, Electromagnetic simulation and Circuit simulation provide high tech platforms for experimentation with extreme flexibility.</p>
-      <p></p>
-      <a style="text-decoration: none;" href="assets/branch/ec.php"> Click here..</a>
+    <div class="col-sm-3 card">
+      <a style="text-decoration: none; color: black;" href="assets/branch/ec.php">
+      <h3>ECE Department</h3>        
+      <p>Question papers, syllabus and coding examples from the Department of Electronics & Comm. Engineering.</p>
+      <p> CLICK HERE</p>
+    </a>
     </div>
-    <!--<div class="col-sm-4">
-      <h3>EEE</h3>        
-      <p>Learn more about Network Theory, Power System and Digital Electronics.</p>
-      <p>We provide you EEE projects ideas and well prepared projects.</p>
-      <a style="text-decoration: none;" href="assets/branch/eee.php"> Click here..</a>
-    </div>-->
   </div>
 </div>
 
