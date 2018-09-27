@@ -89,6 +89,7 @@
     <div class="col-sm-4 card">
       <h3>More Info</h3>
       <p>For more help on these subjects, visit <a href="https://www.openvtu.com/cse7thsem">OpenVTU</a></p>
+      <p>Due to change in syllabus, we have a limited number of reliable notes for the current syllabus. Stay with us, more resources coming soon!</p>
     </div>
   </div>
 </div>
