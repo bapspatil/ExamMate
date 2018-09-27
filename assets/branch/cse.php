@@ -39,27 +39,27 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="./homepage.php"><b>Exam Mate</b></a>
+      <a class="navbar-brand" href="../../homepage.php"><b>Exam Mate</b></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="./homepage.php">Home</a></li>
+        <li><a href="../../homepage.php">Home</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Departments
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li class="active"><a href="assets/branch/cse.php">CSE</a></li>
-            <li><a href="assets/branch/it.php">ISE</a></li>
-            <li><a href="assets/branch/me.php">ME</a></li>
-            <li><a href="assets/branch/ce.php">CE</a></li>
-            <li><a href="assets/branch/ee.php">EEE</a></li>
-            <li><a href="assets/branch/ec.php">ECE</a></li>
+            <li class="active"><a href="cse.php">CSE</a></li>
+            <li><a href="it.php">ISE</a></li>
+            <li><a href="me.php">ME</a></li>
+            <li><a href="ce.php">CE</a></li>
+            <li><a href="ee.php">EEE</a></li>
+            <li><a href="ec.php">ECE</a></li>
           </ul>
       </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="./register.php"><span class="glyphicon glyphicon-user"></span> <b>CREATE ACCOUNT</b></a></li>
-        <li><a href="./logout.php"><span class="glyphicon glyphicon-log-in"></span> <b>LOGOUT</b></a></li>
+        <li><a href="../../register.php"><span class="glyphicon glyphicon-user"></span> <b>CREATE ACCOUNT</b></a></li>
+        <li><a href="../../logout.php"><span class="glyphicon glyphicon-log-in"></span> <b>LOGOUT</b></a></li>
       </ul>
     </div>
   </div>
